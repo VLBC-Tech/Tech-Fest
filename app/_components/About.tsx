@@ -132,7 +132,10 @@ const explore = [
 export default function About() {
   return (
     <div>
-      <div className="text-center lg:w-[70%] mx-auto space-y-5 mt-6 lg:mt-40  px-5 lg:px-0">
+      <div
+        id="about"
+        className="text-center lg:w-[70%] mx-auto space-y-5 mt-6 lg:mt-40  px-5 lg:px-0"
+      >
         <h5 className="text-cyan-400 font-semibold">ABOUT THE EVENT</h5>
         <h4 className="text-white text-center text-6xl font-semibold">
           Innovation with Purpose
@@ -160,7 +163,10 @@ export default function About() {
           />
         ))}
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 relative  mt-20 lg:mt-40">
+      <div
+        id="hackathon"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-4 relative  mt-20 lg:mt-40"
+      >
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full lg:w-200 h-200 rounded-full bg-violet-500/10 blur-[120px]"></div>
         <div className="px-6 space-y-4">
           <div>
