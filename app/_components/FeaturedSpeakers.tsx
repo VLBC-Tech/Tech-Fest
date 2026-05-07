@@ -6,7 +6,10 @@ import { SlSocialTwitter } from "react-icons/sl";
 export default function FeaturedSpeakers() {
   return (
     <div>
-      <div className="text-center lg:w-[50%] mx-auto space-y-5 mt-20 lg:mt-40 px-5 lg:px-0">
+      <div
+        id="speakers"
+        className="text-center lg:w-[50%] mx-auto space-y-5 mt-20 lg:mt-40 px-5 lg:px-0"
+      >
         <h5 className="text-cyan-400 font-semibold">FEATURED SPEAKERS</h5>
         <h4 className="text-white text-center text-5xl font-semibold">
           Learn from the Best

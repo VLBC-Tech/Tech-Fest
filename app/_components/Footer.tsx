@@ -73,34 +73,16 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#"
+                  href="#about"
                   className="text-white/40 hover:text-white/70 transition-colors "
                   data-collection-item-field="link"
                 >
-                  Schedule
+                  About
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
-                  className="text-white/40 hover:text-white/70 transition-colors "
-                  data-collection-item-field="link"
-                >
-                  Speakers
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-white/40 hover:text-white/70 transition-colors "
-                  data-collection-item-field="link"
-                >
-                  Workshops
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
+                  href="#hackathon"
                   className="text-white/40 hover:text-white/70 transition-colors "
                   data-collection-item-field="link"
                 >
@@ -109,16 +91,35 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#speakers"
+                  className="text-white/40 hover:text-white/70 transition-colors "
+                  data-collection-item-field="link"
+                >
+                  Speakers
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#faqs"
                   className="text-white/40 hover:text-white/70 transition-colors "
                   data-collection-item-field="link"
                 >
                   FAQ
                 </a>
               </li>
+              <li>
+                <a
+                  href="#register"
+                  className="text-white/40 hover:text-white/70 transition-colors "
+                  data-collection-item-field="link"
+                >
+                  Register
+                </a>
+              </li>
             </ul>
           </div>
-          <div>
+          {/* <div>
             <h4
               className="text-white font-semibold mb-4"
               data-collection-item-field="title"
@@ -163,7 +164,7 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div>
             <h4
               className="text-white font-semibold mb-4"
@@ -172,7 +173,7 @@ export default function Footer() {
               Church
             </h4>
             <ul className="space-y-3">
-              <li>
+              {/* <li>
                 <a
                   href="#"
                   className="text-white/40 hover:text-white/70 transition-colors "
@@ -198,10 +199,10 @@ export default function Footer() {
                 >
                   Sermons
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
-                  href="#"
+                  href="mailto:vlbconline@gmail.com"
                   className="text-white/40 hover:text-white/70 transition-colors "
                   data-collection-item-field="link"
                 >
@@ -231,7 +232,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Victory Life Bible Church. All rights
             reserved.
           </div>
-          <div className="flex gap-6 ">
+          {/* <div className="flex gap-6 ">
             <a
               href="#"
               className="text-white/30 hover:text-white/50 transition-colors"
@@ -244,7 +245,7 @@ export default function Footer() {
             >
               Terms of Service
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

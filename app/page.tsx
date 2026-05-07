@@ -1,5 +1,6 @@
 import About from "./_components/About";
 import EventSchedule from "./_components/EventSchedule";
+import FAQs from "./_components/FAQs";
 import FeaturedSpeakers from "./_components/FeaturedSpeakers";
 import Footer from "./_components/Footer";
 import Home from "./_components/Home";
@@ -11,7 +12,8 @@ export default function Page() {
       <Home />
       <About />
       <FeaturedSpeakers />
-      <EventSchedule />
+      <FAQs />
+      {/* <EventSchedule /> */}
       <Register />
       <Footer />
     </div>

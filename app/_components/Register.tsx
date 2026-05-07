@@ -108,7 +108,7 @@ export default function Register() {
     (!primarySKill || !stack || !yearsOfExperience || !participationIntent);
 
   return (
-    <div className="space-y-4 px-5 lg:px-0" id="register">
+    <div  className="space-y-4 px-5 lg:px-0" id="register">
       <div className="text-center lg:w-[50%] mx-auto space-y-5 mt-20 lg:mt-40">
         <h5 className="text-cyan-400 font-semibold">Join Us</h5>
         <h4 className="text-white text-center text-5xl font-semibold">
