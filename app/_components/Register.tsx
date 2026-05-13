@@ -84,6 +84,10 @@ export default function Register() {
       setEmail("");
       setPhoneNumber("");
       setOccupation("student");
+      setUnit("");
+      setBranchName("");
+      setLocation("");
+      setChurchName("");
       // setExperienceLevel("");
       setIsApplying(null);
       setPrimarySKill("");
