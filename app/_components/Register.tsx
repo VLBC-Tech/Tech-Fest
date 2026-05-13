@@ -42,7 +42,7 @@ export default function Register() {
   const [fullName, setFullName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [phoneNumber, setPhoneNumber] = useState<string>("");
-  const [occupation, setOccupation] = useState<string>("");
+  const [occupation, setOccupation] = useState<string>("student");
   const [churchName, setChurchName] = useState<string>("");
   const [branchName, setBranchName] = useState<string>("");
   const [unit, setUnit] = useState<string>("");
@@ -52,8 +52,9 @@ export default function Register() {
 
   const [isApplying, setIsApplying] = useState<boolean | null>(null);
   const [primarySKill, setPrimarySKill] = useState<string>("");
-  const [stack, setStack] = useState<string>("");
-  const [yearsOfExperience, setYearsOfExperience] = useState<string>("");
+  const [stack, setStack] = useState<string>("JS(React/NextJS/Vue/)");
+  const [yearsOfExperience, setYearsOfExperience] =
+    useState<string>("Less than 1 year");
   const [webUrl, setWebUrl] = useState<string>("");
   const [participationIntent, setParticipationIntent] = useState<string>("");
 
@@ -82,12 +83,12 @@ export default function Register() {
       setFullName("");
       setEmail("");
       setPhoneNumber("");
-      setOccupation("");
+      setOccupation("student");
       // setExperienceLevel("");
       setIsApplying(null);
       setPrimarySKill("");
-      setStack("");
-      setYearsOfExperience("");
+      setStack("JS(React/NextJS/Vue/)");
+      setYearsOfExperience("Less than 1 year");
       setWebUrl("");
       setParticipationIntent("");
       setStep(1);
@@ -105,10 +106,14 @@ export default function Register() {
     !location; //|| !experienceLevel;
   const disableSubmit =
     step === 2 &&
-    (!primarySKill || !stack || !yearsOfExperience || !participationIntent);
+    (!primarySKill ||
+      !stack ||
+      !yearsOfExperience ||
+      !participationIntent ||
+      !webUrl);
 
   return (
-    <div  className="space-y-4 px-5 lg:px-0" id="register">
+    <div className="space-y-4 px-5 lg:px-0" id="register">
       <div className="text-center lg:w-[50%] mx-auto space-y-5 mt-20 lg:mt-40">
         <h5 className="text-cyan-400 font-semibold">Join Us</h5>
         <h4 className="text-white text-center text-5xl font-semibold">

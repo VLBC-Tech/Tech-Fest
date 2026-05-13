@@ -25,8 +25,8 @@ export default function FeaturedSpeakers() {
         <div className="group overflow-hidden">
           <div className="h-100 w-full rounded-xl overflow-hidden relative">
             <Image
-              src="/empty-profile.jpg"
-              alt=""
+              src="/apostle-lawrence.jpeg"
+              alt="apostle lawrence"
               height={400}
               width={300}
               className="object-cover size-full duration-200 ease-in group-hover:scale-[102%]"
@@ -46,9 +46,9 @@ export default function FeaturedSpeakers() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h4 className="text-white text-lg">Marcus Johnson</h4>
-            <p className="text-sm text-white/50">Fullstack Developer</p>
-            <p className="text-sm text-cyan-400">CCI</p>
+            <h4 className="text-white text-lg">Apostle Lawrence Achudume</h4>
+            <p className="text-sm text-white/50">Gen Overseer</p>
+            <p className="text-sm text-cyan-400">VLBC Int&apos;l</p>
           </div>
         </div>
         <div className="group overflow-hidden">
@@ -83,7 +83,7 @@ export default function FeaturedSpeakers() {
         <div className="group overflow-hidden">
           <div className="h-100 w-full rounded-xl overflow-hidden relative">
             <Image
-              src="/empty-profile.jpg"
+              src="/darasimi.jpg"
               alt=""
               height={400}
               width={300}
@@ -104,7 +104,7 @@ export default function FeaturedSpeakers() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h4 className="text-white text-lg">Pastor Rotimi Bolaji</h4>
+            <h4 className="text-white text-lg">Darasimi</h4>
             <p className="text-sm text-white/50">---</p>
             <p className="text-sm text-cyan-400">---</p>
           </div>
@@ -112,8 +112,8 @@ export default function FeaturedSpeakers() {
         <div className="group overflow-hidden">
           <div className="h-100 w-full rounded-xl overflow-hidden relative">
             <Image
-              src="/empty-profile.jpg"
-              alt=""
+              src="/dr-abayomi.jpg"
+              alt="dr abayomi"
               height={400}
               width={300}
               className="object-cover size-full duration-200 ease-in group-hover:scale-[102%]"
@@ -133,9 +133,9 @@ export default function FeaturedSpeakers() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h4 className="text-white text-lg">Mr. Paul Akolade</h4>
+            <h4 className="text-white text-lg">Dr Abayomi</h4>
             <p className="text-sm text-white/50">---</p>
-            <p className="text-sm text-cyan-400">Vant</p>
+            <p className="text-sm text-cyan-400">VLBC Int&apos;l</p>
           </div>
         </div>
       </div>
