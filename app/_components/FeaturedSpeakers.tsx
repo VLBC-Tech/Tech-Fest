@@ -75,9 +75,11 @@ export default function FeaturedSpeakers() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h4 className="text-white text-lg">Taiwo Akinsanya</h4>
-            <p className="text-sm text-white/50">---</p>
-            <p className="text-sm text-cyan-400">Dynalimbs</p>
+            <h4 className="text-white text-lg">Dafe Richards</h4>
+            <p className="text-sm text-white/50">
+              Tech Founder & Digital Creator
+            </p>
+            <p className="text-sm text-cyan-400"></p>
           </div>
         </div>
         <div className="group overflow-hidden">
@@ -104,16 +106,18 @@ export default function FeaturedSpeakers() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h4 className="text-white text-lg">Darasimi</h4>
-            <p className="text-sm text-white/50">---</p>
-            <p className="text-sm text-cyan-400">---</p>
+            <h4 className="text-white text-lg">Darasimi Solaloju</h4>
+            <p className="text-sm text-white/50">
+              Product Designer(Creator PewBeam)
+            </p>
+            <p className="text-sm text-cyan-400">Moniepoint</p>
           </div>
         </div>
         <div className="group overflow-hidden">
           <div className="h-100 w-full rounded-xl overflow-hidden relative">
             <Image
-              src="/dr-abayomi.jpg"
-              alt="dr abayomi"
+              src="/sirtified.jpg"
+              alt="sirtified"
               height={400}
               width={300}
               className="object-cover size-full duration-200 ease-in group-hover:scale-[102%]"
@@ -133,8 +137,8 @@ export default function FeaturedSpeakers() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h4 className="text-white text-lg">Dr Abayomi</h4>
-            <p className="text-sm text-white/50">---</p>
+            <h4 className="text-white text-lg">Sirtified</h4>
+            <p className="text-sm text-white/50">Live Production Expert</p>
             <p className="text-sm text-cyan-400">VLBC Int&apos;l</p>
           </div>
         </div>
