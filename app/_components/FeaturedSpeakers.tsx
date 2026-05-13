@@ -46,8 +46,8 @@ export default function FeaturedSpeakers() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h4 className="text-white text-lg">Apostle Lawrence Achudume</h4>
-            <p className="text-sm text-white/50">Gen Overseer</p>
+            <h4 className="text-white text-lg">Apst Lawrence Achudume</h4>
+            <p className="text-sm text-white/50">Lead Pastor</p>
             <p className="text-sm text-cyan-400">VLBC Int&apos;l</p>
           </div>
         </div>
