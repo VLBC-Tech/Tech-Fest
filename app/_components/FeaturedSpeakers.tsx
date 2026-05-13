@@ -139,7 +139,7 @@ export default function FeaturedSpeakers() {
           <div className="flex flex-col items-center justify-center">
             <h4 className="text-white text-lg">Sirtified</h4>
             <p className="text-sm text-white/50">Live Production Expert</p>
-            <p className="text-sm text-cyan-400">VLBC Int&apos;l</p>
+            <p className="text-sm text-cyan-400"></p>
           </div>
         </div>
       </div>
