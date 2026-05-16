@@ -1,6 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import { BsGlobe } from "react-icons/bs";
-import { FiLinkedin } from "react-icons/fi";
+import { FiInstagram, FiLinkedin, FiTwitter, FiYoutube } from "react-icons/fi";
 import { SlSocialTwitter } from "react-icons/sl";
 
 export default function FeaturedSpeakers() {
@@ -32,17 +33,25 @@ export default function FeaturedSpeakers() {
               className="object-cover size-full duration-200 ease-in group-hover:scale-[102%]"
             />
             <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-100 flex items-center gap-4">
-              <button className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center ">
+              <Link
+                href="https://x.com/LAchudume"
+                target="_blank"
+                className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center"
+              >
                 <SlSocialTwitter color="white" size={"1.5rem"} />
-              </button>
+              </Link>
 
-              <button className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center ">
-                <FiLinkedin color="white" size={"1.5rem"} />
-              </button>
+              <Link
+                href="https://www.instagram.com/luachudume?igsh=NW90bnAxYnQzNmhj"
+                target="_blank"
+                className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center"
+              >
+                <FiInstagram color="white" size={"1.5rem"} />
+              </Link>
 
-              <button className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center ">
+              {/* <Link className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center">
                 <FiLinkedin color="white" size={"1.5rem"} />
-              </button>
+              </Link> */}
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
@@ -61,17 +70,25 @@ export default function FeaturedSpeakers() {
               className="object-cover size-full duration-200 ease-in group-hover:scale-[102%]"
             />
             <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-100 flex items-center gap-4">
-              <button className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center ">
-                <SlSocialTwitter color="white" size={"1.5rem"} />
-              </button>
+              <Link
+                href="https://www.instagram.com/daferichards/"
+                target="_blank"
+                className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center "
+              >
+                <FiInstagram color="white" size={"1.5rem"} />
+              </Link>
 
-              <button className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center ">
+              {/* <button className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center ">
                 <FiLinkedin color="white" size={"1.5rem"} />
-              </button>
+              </button> */}
 
-              <button className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center ">
-                <BsGlobe color="white" size={"1.5rem"} />
-              </button>
+              <Link
+                href="https://x.com/daferichards"
+                target="_blank"
+                className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center "
+              >
+                <FiTwitter color="white" size={"1.5rem"} />
+              </Link>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
@@ -92,17 +109,25 @@ export default function FeaturedSpeakers() {
               className="object-cover size-full duration-200 ease-in group-hover:scale-[102%]"
             />
             <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-100 flex items-center gap-4">
-              <button className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center ">
+              <Link
+                href="https://x.com/darasoba"
+                target="_blank"
+                className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center "
+              >
                 <SlSocialTwitter color="white" size={"1.5rem"} />
-              </button>
+              </Link>
 
-              <button className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center ">
+              <Link
+                href="https://www.linkedin.com/in/darasoba/"
+                target="_blank"
+                className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center "
+              >
                 <FiLinkedin color="white" size={"1.5rem"} />
-              </button>
+              </Link>
 
-              <button className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center ">
+              {/* <button className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center ">
                 <BsGlobe color="white" size={"1.5rem"} />
-              </button>
+              </button> */}
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
@@ -123,17 +148,25 @@ export default function FeaturedSpeakers() {
               className="object-cover size-full duration-200 ease-in group-hover:scale-[102%]"
             />
             <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-100 flex items-center gap-4">
-              <button className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center ">
+              {/* <button className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center ">
                 <SlSocialTwitter color="white" size={"1.5rem"} />
-              </button>
+              </button> */}
 
-              <button className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center ">
-                <FiLinkedin color="white" size={"1.5rem"} />
-              </button>
+              <Link
+                href="https://www.instagram.com/sirtified_thecreative/"
+                target="_blank"
+                className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center "
+              >
+                <FiInstagram color="white" size={"1.5rem"} />
+              </Link>
 
-              <button className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center ">
-                <BsGlobe color="white" size={"1.5rem"} />
-              </button>
+              <Link
+                href="https://www.youtube.com/@sirtifiedthecreative"
+                target="_blank"
+                className="size-10 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 flex items-center justify-center "
+              >
+                <FiYoutube color="white" size={"1.5rem"} />
+              </Link>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">

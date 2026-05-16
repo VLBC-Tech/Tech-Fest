@@ -26,7 +26,8 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://www.instagram.com/vlbctechteam?igsh=MXhocml4bHhwd2czYw=="
+                target="_blank"
                 aria-label="Instagram"
                 className="w-10 h-10 rounded-xl bg-white/5 border border-white/8 flex items-center justify-center text-white/50 hover:text-white hover:bg-white/1 transition-all"
                 data-arr-index="0"
@@ -34,7 +35,7 @@ export default function Footer() {
               >
                 <FaInstagram size={"1.5rem"} />
               </a>
-              <a
+              {/* <a
                 href="#"
                 aria-label="Twitter"
                 className="w-10 h-10 rounded-xl bg-white/5 border border-white/8 flex items-center justify-center text-white/50 hover:text-white hover:bg-white/1 transition-all"
@@ -60,7 +61,7 @@ export default function Footer() {
                 data-arr-variable-name="socialLinks"
               >
                 <FiLinkedin size={"1.5rem"} />
-              </a>
+              </a> */}
             </div>
           </div>
           <div>

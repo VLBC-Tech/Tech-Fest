@@ -58,7 +58,7 @@ const about = [
     title: "Prizes",
     iconColor: "bg-gradient-to-br from-violet-500/20 to-pink-500/20",
     icon: <HiOutlineTrophy className="size-6" />,
-    description: "in prizes",
+    description: "Prizes up for grabs",
   },
   {
     title: "Real Impact",
@@ -74,18 +74,18 @@ const explore = [
     iconColor: "bg-blue-400",
     icon: <PiGlobeSimple className="size-6" />,
     description: "Ethical AI for ministry",
-    altDescription:
-      "Explore how artificial intelligence can enhance pastoral care, automate administrative tasks, and create personalized spiritual growth experiences while maintaining ethical boundaries.",
+    altDescription: "Explore how AI can advance the church",
+    // "Explore how artificial intelligence can enhance pastoral care, automate administrative tasks, and create personalized spiritual growth experiences while maintaining ethical boundaries.",
     hoverBg: "bg-blue-500/20",
     borderB: "bg-blue-500",
   },
   {
-    title: "Media, Sound & Digital Excellence ",
+    title: "Web & Mobile",
     iconColor: "bg-violet-400",
     icon: <LuBrain className="size-6" />,
     description: "Connected communities",
-    altDescription:
-      "Build accessible, engaging digital platforms that connect congregations, facilitate small groups, and extend your ministry reach to those who cannot attend in person.",
+    altDescription: "Build accessible and engaging digital platforms",
+    // "Build accessible, engaging digital platforms that connect congregations, facilitate small groups, and extend your ministry reach to those who cannot attend in person.",
     hoverBg: "bg-violet-500/20",
     borderB: "bg-violet-500",
   },
@@ -94,8 +94,8 @@ const explore = [
     iconColor: "bg-pink-400",
     icon: <IoColorPaletteOutline className="size-6" />,
     description: "Visual storytelling",
-    altDescription:
-      "Master the art of digital media production, from worship graphics and social content to immersive experiences that communicate timeless truths in contemporary ways.",
+    altDescription: "Master the art of digital media production",
+    // "Master the art of digital media production, from worship graphics and social content to immersive experiences that communicate timeless truths in contemporary ways.",
     hoverBg: "bg-pink-500/20",
     borderB: "bg-pink-500",
   },
@@ -104,8 +104,8 @@ const explore = [
     iconColor: "bg-emerald-400",
     icon: <LiaFighterJetSolid className="size-6" />, //<LuShield className="size-6" />,
     description: "What we hope to see", //"Protecting the flock",
-    altDescription:
-      "Learn essential cybersecurity practices to protect sensitive member data, secure online giving platforms, and maintain trust in an increasingly digital ministry environment.",
+    altDescription: "Learn essential cybersecurity practices.",
+    // "Learn essential cybersecurity practices to protect sensitive member data, secure online giving platforms, and maintain trust in an increasingly digital ministry environment.",
     hoverBg: "bg-emerald-500/20",
     borderB: "bg-emerald-500",
   },
@@ -122,7 +122,7 @@ const explore = [
     title: "Mental Health & Sustainable Service",
     iconColor: "bg-yellow-400",
     icon: <MdOutlineHealthAndSafety className="size-6" />,
-    description: "Community impact",
+    description: "Health is wealth",
     altDescription: "Learn more about you mental health",
     hoverBg: "bg-yellow-500/20",
     borderB: "bg-yellow-500",
@@ -340,7 +340,8 @@ function Card2({
         {description}
       </p>
       <p className="text-white/50 opacity-0 translate-y-10 transition-all ease-in group-hover:opacity-100 group-hover:translate-y-0 h-0 group-hover:h-auto">
-        {altDescription?.slice(0, 40)}
+        {altDescription}
+        {/* {altDescription?.slice(0, 45)} */}
       </p>
       {/* <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-500  opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div> */}
       <div
