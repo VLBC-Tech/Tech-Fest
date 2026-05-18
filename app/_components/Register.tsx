@@ -47,6 +47,8 @@ export default function Register() {
   const [branchName, setBranchName] = useState<string>("");
   const [unit, setUnit] = useState<string>("");
   const [location, setLocation] = useState<string>("");
+  const [certificateType, setCertificateType] = useState<string>("");
+  const [attendanceType, setAttendanceType] = useState<boolean>(false);
 
   // const [experienceLevel, setExperienceLevel] = useState<string>("");
 
@@ -77,6 +79,8 @@ export default function Register() {
         yearsOfExperience,
         webUrl,
         participationIntent,
+        attendanceType: attendanceType ? "virtual" : "physical",
+        certificateType,
       }),
     onSuccess: () => {
       toast.success("Registration complete. Please check your email");
@@ -96,6 +100,8 @@ export default function Register() {
       setWebUrl("");
       setParticipationIntent("");
       setStep(1);
+      setCertificateType("");
+      setAttendanceType(false);
     },
     onError: (err) => toast.error(err.message),
   });
@@ -136,7 +142,7 @@ export default function Register() {
 
           <span>
             <p className="text-white font-semibold">Register for Tech Fest</p>
-            <p className="text-sm text-white/40">2-day general attendance</p>
+            <p className="text-sm text-white/40">2-sy general attendance</p>
           </span>
         </button>
 
@@ -341,6 +347,39 @@ export default function Register() {
                 ))}
               </div>
             </div> */}
+
+            <div className="mt-8  ">
+              <label className="text-sm font-bold text-white/70 inline-block mb-2">
+                Would you like a certificte?
+              </label>
+              <select
+                value={certificateType}
+                onChange={(e) => setCertificateType(e.target.value)}
+                className="w-full px-4 py-3 rounded-xl bg-white/4 border text-white placeholder:text-white/20 focus:outline-none focus:ring-2 focus:ring-violet-500/50 focus:border-violet-500/50 transition-all duration-300 border-white/8 hover:border-white/20"
+              >
+                <option className="bg-[#0a0f1c]" value={""}>
+                  No
+                </option>
+                <option className="bg-[#0a0f1c]" value={"e-copy"}>
+                  Yes (e-copy)
+                </option>
+                <option className="bg-[#0a0f1c]" value={"printout"}>
+                  Yes (printout)
+                </option>
+              </select>
+            </div>
+
+            <div className="flex items-center gap-3 mt-4 mb-8">
+              <input
+                type="checkbox"
+                className="size-5"
+                onClick={() => setAttendanceType((s) => !s)}
+                checked={attendanceType}
+              />
+              <label className="text-sm font-bold text-white/70 inline-block">
+                Would you be attending virtually?
+              </label>
+            </div>
 
             <div className="text-white md:flex gap-3 mt-4 relative p-5 rounded-2xl border border-violet-500/20 bg-linear-to-br from-violet-500/5 to-pink-500/5 backdrop-blur-sm">
               <div>
