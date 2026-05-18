@@ -5,7 +5,8 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/api/:path*",
-        destination: "https://tech-fest-backend-1.onrender.com/api/:path*",
+        // destination: "https://tech-fest-backend-1.onrender.com/api/:path*",
+        destination: "http://localhost:3000/api/:path*",
       },
     ];
   },

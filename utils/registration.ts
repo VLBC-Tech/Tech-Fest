@@ -16,6 +16,8 @@ interface UserFormData {
   yearsOfExperience?: string;
   participationIntent?: string;
   webUrl?: string;
+  certificateType?: string;
+  attendanceType: string;
 }
 
 export function registerUser(data: UserFormData) {
