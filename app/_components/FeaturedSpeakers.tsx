@@ -63,7 +63,7 @@ export default function FeaturedSpeakers() {
         <div className="group overflow-hidden">
           <div className="h-100 w-full rounded-xl overflow-hidden relative">
             <Image
-              src="/empty-profile.jpg"
+              src="/dafe-richards.JPEG"
               alt=""
               height={400}
               width={300}
