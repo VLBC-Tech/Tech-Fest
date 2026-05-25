@@ -48,7 +48,9 @@ export default function Register() {
   const [unit, setUnit] = useState<string>("");
   const [location, setLocation] = useState<string>("");
   const [certificateType, setCertificateType] = useState<string>("");
-  const [attendanceType, setAttendanceType] = useState<boolean>(false);
+  const [attendanceType, setAttendanceType] = useState<"physical" | "virtual">(
+    "physical",
+  );
 
   // const [experienceLevel, setExperienceLevel] = useState<string>("");
 
@@ -79,7 +81,7 @@ export default function Register() {
         yearsOfExperience,
         webUrl,
         participationIntent,
-        attendanceType: attendanceType ? "virtual" : "physical",
+        attendanceType: attendanceType === "virtual" ? "virtual" : "physical",
         certificateType,
       }),
     onSuccess: () => {
@@ -101,7 +103,7 @@ export default function Register() {
       setParticipationIntent("");
       setStep(1);
       setCertificateType("");
-      setAttendanceType(false);
+      setAttendanceType("physical");
     },
     onError: (err) => toast.error(err.message),
   });
@@ -348,29 +350,47 @@ export default function Register() {
               </div>
             </div> */}
 
-            <div className="mt-8  ">
-              <label className="text-sm font-bold text-white/70 inline-block mb-2">
-                Would you like a certificte?
-              </label>
-              <select
-                value={certificateType}
-                onChange={(e) => setCertificateType(e.target.value)}
-                className="w-full px-4 py-3 rounded-xl bg-white/4 border text-white placeholder:text-white/20 focus:outline-none focus:ring-2 focus:ring-violet-500/50 focus:border-violet-500/50 transition-all duration-300 border-white/8 hover:border-white/20"
-              >
-                <option className="bg-[#0a0f1c]" value={""}>
-                  No
-                </option>
-                <option className="bg-[#0a0f1c]" value={"e-copy"}>
-                  Yes (e-copy)
-                </option>
-                <option className="bg-[#0a0f1c]" value={"printout"}>
-                  Yes (printout)
-                </option>
-              </select>
-            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="mt-8 ">
+                <label className="text-sm font-bold text-white/70 inline-block mb-2">
+                  Would you like a certificte?
+                </label>
 
-            <div className="flex items-center gap-3 mt-4 mb-8">
-              <input
+                <select
+                  value={certificateType}
+                  onChange={(e) => setCertificateType(e.target.value)}
+                  className="w-full px-4 py-3 rounded-xl bg-white/4 border text-white placeholder:text-white/20 focus:outline-none focus:ring-2 focus:ring-violet-500/50 focus:border-violet-500/50 transition-all duration-300 border-white/8 hover:border-white/20"
+                >
+                  <option className="bg-[#0a0f1c]" value={""}>
+                    No
+                  </option>
+                  <option className="bg-[#0a0f1c]" value={"e-copy"}>
+                    Yes (e-copy)
+                  </option>
+                  <option className="bg-[#0a0f1c]" value={"printout"}>
+                    Yes (printout)
+                  </option>
+                </select>
+              </div>
+
+              <div className="mt-8">
+                <label className="text-sm font-bold text-white/70 inline-block mb-2">
+                  How will you be attending?
+                </label>
+                <select
+                  value={certificateType}
+                  onChange={(e) => setCertificateType(e.target.value)}
+                  className="w-full px-4 py-3 rounded-xl bg-white/4 border text-white placeholder:text-white/20 focus:outline-none focus:ring-2 focus:ring-violet-500/50 focus:border-violet-500/50 transition-all duration-300 border-white/8 hover:border-white/20"
+                >
+                  <option className="bg-[#0a0f1c]" value="physical">
+                    physical
+                  </option>
+                  <option className="bg-[#0a0f1c]" value="virtual">
+                    online
+                  </option>
+                </select>
+              </div>
+              {/* <input
                 type="checkbox"
                 className="size-5"
                 onClick={() => setAttendanceType((s) => !s)}
@@ -378,7 +398,7 @@ export default function Register() {
               />
               <label className="text-sm font-bold text-white/70 inline-block">
                 Would you be attending virtually?
-              </label>
+              </label> */}
             </div>
 
             <div className="text-white md:flex gap-3 mt-4 relative p-5 rounded-2xl border border-violet-500/20 bg-linear-to-br from-violet-500/5 to-pink-500/5 backdrop-blur-sm">
