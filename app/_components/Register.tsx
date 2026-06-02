@@ -38,6 +38,8 @@ const experienceLevel = [
 
 // const professionalLevel = ["Beginner", "Intermediate", "Professional"];
 
+type AttendanceType = "physical" | "virtual";
+
 export default function Register() {
   const [fullName, setFullName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
@@ -48,9 +50,8 @@ export default function Register() {
   const [unit, setUnit] = useState<string>("");
   const [location, setLocation] = useState<string>("");
   const [certificateType, setCertificateType] = useState<string>("");
-  const [attendanceType, setAttendanceType] = useState<"physical" | "virtual">(
-    "physical",
-  );
+  const [attendanceType, setAttendanceType] =
+    useState<AttendanceType>("physical");
 
   // const [experienceLevel, setExperienceLevel] = useState<string>("");
 
@@ -378,8 +379,10 @@ export default function Register() {
                   How will you be attending?
                 </label>
                 <select
-                  value={certificateType}
-                  onChange={(e) => setCertificateType(e.target.value)}
+                  value={attendanceType}
+                  onChange={(e) =>
+                    setAttendanceType(e.target.value as AttendanceType)
+                  }
                   className="w-full px-4 py-3 rounded-xl bg-white/4 border text-white placeholder:text-white/20 focus:outline-none focus:ring-2 focus:ring-violet-500/50 focus:border-violet-500/50 transition-all duration-300 border-white/8 hover:border-white/20"
                 >
                   <option className="bg-[#0a0f1c]" value="physical">
