@@ -86,7 +86,8 @@ export default function Register() {
         certificateType,
       }),
     onSuccess: () => {
-      toast.success("Registration complete. Please check your email");
+      // toast.success("Registration complete. Please check your email");
+      toast.success("Registration complete. You'll receive an email shortly.");
       setFullName("");
       setEmail("");
       setPhoneNumber("");
